@@ -90,7 +90,7 @@ const IndexPage: NextPage = () => {
     isIndeterminate,
     toggleSelected,
     toggleSelectedAll,
-  } = useRowSelect<number>(rows.map((row) => row.id));
+  } = useRowSelect(rows.map((row) => row.id));
 
   return (
     <Box sx={{ maxWidth: 1500, mx: "auto" }}>
